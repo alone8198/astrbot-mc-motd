@@ -104,7 +104,7 @@ class MCMotdPlugin(Star):
                 ]
             else:
                 status = await loop.run_in_executor(
-                    None, lambda: BedrockServer(host, port).status(timeout=5)
+                    None, lambda: BedrockServer(host, port).status()
                 )
                 motd = self._format_motd(status.description)
                 latency = round(status.latency, 1)
