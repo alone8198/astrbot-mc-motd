@@ -87,7 +87,7 @@ class MCMotdPlugin(Star):
         try:
             if edition == "je":
                 status = await loop.run_in_executor(
-                    None, lambda: JavaServer(host, port).status(timeout=5)
+                    None, lambda: JavaServer(host, port).status()
                 )
                 motd = self._format_motd(status.description)
                 latency = round(status.latency, 1)
