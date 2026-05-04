@@ -1,4 +1,4 @@
-name: astrbot-mc-motd
+name: Minecraft服务器查询
 author: plugin-dev
 version: 1.0.0
 description: 查询Minecraft服务器MOTD信息，支持Java版和基岩版
